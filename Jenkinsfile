@@ -35,10 +35,13 @@ stages {
 }
    stage('Code Checkout to Source code Repo') {
     steps {
-     checkout([
+     /*checkout([
         $class: 'GitSCM', 
         branches: [[name: 'feature/jenkins']], 
         userRemoteConfigs: [[credentialsId: 'ed841a8b-0508-4bdf-bef5-8f20d4524e60',url: 'https://github.com/devopswale/spring-demo.git']]])
+     */
+     
+     checkout scm
 }
 }
 }
