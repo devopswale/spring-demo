@@ -33,7 +33,7 @@ stages {
       
 }
 }
-   stage('Code Checkout to Source code Repo'){
+   stage('Code Checkout to Source code Repo') {
     steps {
      checkout([
         $class: 'GitSCM', 
