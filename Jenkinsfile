@@ -50,6 +50,7 @@ stages {
   stage('Code Build'){
     steps {
        sh 'mvn install -Dmaven.test.skip=true'
+       sh "ls -lart"
     } 
   }
 }
