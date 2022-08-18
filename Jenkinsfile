@@ -43,7 +43,9 @@ stages {
     }
   }
   stage('list code') {
+    steps {
    sh "ls -al" 
+  }
   }
 }
 }
