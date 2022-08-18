@@ -31,11 +31,6 @@ stages {
         echo "clean the workspace for $APP_NAME"
         echo "we are in stage 1"
         """
-   stage(‘Code Checkout to Source code Repo’) {
-    steps {
-     checkout scm
-}
-}     
 }
 }
 }
