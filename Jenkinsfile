@@ -47,5 +47,10 @@ stages {
    sh "ls -al" 
   }
   }
+  stage('Code Build'){
+    steps {
+       sh 'mvn install -Dmaven.test.skip=true'
+    } 
+  }
 }
 }
