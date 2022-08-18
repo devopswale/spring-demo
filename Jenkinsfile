@@ -31,7 +31,13 @@ stages {
         echo "clean the workspace for $APP_NAME"
         echo "we are in stage 1"
         """
-}
-}
+         }
+      }
+  
+  stage('Code Checkout') {
+    steps {
+     checkoutscm
+    }
+  }
 }
 }
